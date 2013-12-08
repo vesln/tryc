@@ -14,7 +14,6 @@
   "devDependencies": {
     "mocha": "~1.13.0",
     "chai": "~1.8.1",
-    "jshint": "~2.3.0",
     "component": "~0.18.0",
     "karma-script-launcher": "~0.1.0",
     "karma-chrome-launcher": "~0.1.1",
