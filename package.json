@@ -1,7 +1,7 @@
 {
   "name": "tryc",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Async try-catch",
   "main": "./lib/node.js",
   "homepage": "https://github.com/vesln/tryc",
   "scripts": {
