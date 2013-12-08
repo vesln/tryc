@@ -1,9 +1,9 @@
-TESTS = test/*.test.js
+TESTS = test/*.js
 REPORTER = dot
 
 browser: node_modules lib/* components
-	@./node_modules/.bin/component-build -s snatch -o .
-	@mv build.js snatch.js
+	@./node_modules/.bin/component-build -s tryc -o .
+	@mv build.js tryc.js
 
 components: node_modules component.json
 	@./node_modules/.bin/component-install --dev
@@ -28,7 +28,7 @@ test-travisci:
 	@make test-node
 
 coverage:
-	@./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/*.test.js \
+	@./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha $(TESTS) \
 		-- --require test/support/bootstrap
 
 .PHONY: all test coverage

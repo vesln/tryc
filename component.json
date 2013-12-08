@@ -1,6 +1,6 @@
 {
-  "name": "snatch",
-  "repo": "vesln/snatch",
+  "name": "tryc",
+  "repo": "vesln/tryc",
   "description": "Async try-catch",
   "version": "0.0.1",
   "license": "MIT",

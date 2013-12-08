@@ -1,5 +1,5 @@
 it('catches sync errors', function(done) {
-  snatch(function() {
+  tryc(function() {
     throw new Error('test');
   }, function(err) {
     expect(err).to.be.ok;
@@ -8,7 +8,7 @@ it('catches sync errors', function(done) {
 });
 
 it('catches async errors', function(done) {
-  snatch(function() {
+  tryc(function() {
     setTimeout(function() {
       throw new Error('test');
     }, 2);

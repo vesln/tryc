@@ -11,10 +11,10 @@ var chai = require('chai');
 global.expect = chai.expect;
 
 /**
- * `snatch`.
+ * `tryc`.
  */
 
-global.snatch = require('../../');
+global.tryc = require('../../');
 
 /**
  * Do not show diffs.

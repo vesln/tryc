@@ -11,7 +11,7 @@ var chai = require('chai');
 global.expect = chai.expect;
 
 /**
- * `snatch`.
+ * `tryc`.
  */
 
-global.snatch = require('snatch');
+global.tryc = require('tryc');

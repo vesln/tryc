@@ -1,20 +1,20 @@
-[![NPM version](https://badge.fury.io/js/snatch.png)](http://badge.fury.io/js/snatch)
-[![Build Status](https://secure.travis-ci.org/vesln/snatch.png)](http://travis-ci.org/vesln/snatch)
-[![Code Climate](https://codeclimate.com/github/vesln/snatch.png)](https://codeclimate.com/github/vesln/snatch)
+[![NPM version](https://badge.fury.io/js/tryc.png)](http://badge.fury.io/js/tryc)
+[![Build Status](https://secure.travis-ci.org/vesln/tryc.png)](http://travis-ci.org/vesln/tryc)
+[![Code Climate](https://codeclimate.com/github/vesln/tryc.png)](https://codeclimate.com/github/vesln/tryc)
 
-# snatch
+# tryc
 
 Async try-catch.
 
 ## Usage
 
 ```js
-snatch(function(done) {
+tryc(function(done) {
   // do risky stuff
   // throw errors if necessary
   done();
 }, function(err) {
-  // err should c
+  // err === error if any
 });
 ```
 
@@ -28,13 +28,13 @@ Implementation details:
 npm:
 
 ```bash
-npm install snatch
+npm install tryc
 ```
 
 component:
 
 ```bash
-component install vesln/snatch
+component install vesln/tryc
 ```
 
 ## Tests
