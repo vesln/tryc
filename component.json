@@ -1,0 +1,14 @@
+{
+  "name": "snatch",
+  "repo": "vesln/snatch",
+  "description": "Async try-catch",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/browser.js",
+  "scripts": [
+    "lib/browser.js"
+  ],
+  "development": {
+    "chaijs/chai": "*"
+  }
+}
