@@ -17,3 +17,16 @@ it('catches async errors', function(done) {
     done();
   });
 });
+
+it('works when nested', function(done) {
+  tryc(function(first) {
+    tryc(function(second) {
+      throw new Error('bad');
+    }, function(err) {
+      expect(err).to.be.ok;
+      done();
+    });
+  }, function(err) {
+    throw new Error('fail');
+  });
+});

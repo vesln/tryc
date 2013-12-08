@@ -18,11 +18,6 @@ tryc(function(done) {
 });
 ```
 
-Implementation details:
-
-* Node.js: uses domains
-* Browsers: uses onerror
-
 ## Installation
 
 npm:
