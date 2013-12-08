@@ -8,6 +8,7 @@ Async try-catch.
 
 ## Usage
 
+```js
 snatch(function(done) {
   // do risky stuff
   // throw errors if necessary
@@ -15,6 +16,12 @@ snatch(function(done) {
 }, function(err) {
   // err should c
 });
+```
+
+Implementation details:
+
+* Node.js: uses domains
+* Browsers: uses onerror
 
 ## Installation
 
