@@ -1,6 +1,3 @@
-TESTS = test/*.js
-REPORTER = dot
-
 browser: node_modules lib/* components
 	@./node_modules/.bin/component-build -s tryc -o .
 	@mv build.js tryc.js
@@ -14,21 +11,15 @@ build: components lib/*
 test: test-node test-browser
 
 test-node:
-	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--require test/support/bootstrap \
-		--reporter $(REPORTER) \
-		$(TESTS)
+	@NODE_ENV=test node test/
 
 test-browser: build
 	@./node_modules/karma/bin/karma start \
 		--single-run --browsers PhantomJS,Chrome,Firefox
 
-test-travisci:
-	@echo TRAVIS_JOB_ID $(TRAVIS_JOB_ID)
-	@make test-node
+ci: test-node
 
 coverage:
-	@./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha $(TESTS) \
-		-- --require test/support/bootstrap
+	@./node_modules/.bin/istanbul cover test/index.js
 
 .PHONY: all test coverage
