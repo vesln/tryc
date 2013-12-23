@@ -1,6 +1,6 @@
 {
   "name": "tryc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Async try-catch",
   "main": "./lib/node.js",
   "homepage": "https://github.com/vesln/tryc",
@@ -12,7 +12,6 @@
     "url": "https://github.com/vesln/tryc"
   },
   "devDependencies": {
-    "chai": "~1.8.1",
     "component": "~0.18.0",
     "karma-chrome-launcher": "~0.1.1",
     "karma-firefox-launcher": "~0.1.2",

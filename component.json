@@ -2,13 +2,10 @@
   "name": "tryc",
   "repo": "vesln/tryc",
   "description": "Async try-catch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "lib/browser.js",
   "scripts": [
     "lib/browser.js"
-  ],
-  "development": {
-    "chaijs/chai": "*"
-  }
+  ]
 }
