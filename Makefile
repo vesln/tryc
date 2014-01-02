@@ -22,4 +22,7 @@ ci: test-node
 coverage:
 	@./node_modules/.bin/istanbul cover test/index.js
 
+node_modules: package.json
+	@npm i
+
 .PHONY: all test coverage

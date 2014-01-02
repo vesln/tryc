@@ -19,6 +19,9 @@
     "karma": "~0.10.8",
     "istanbul": "~0.1.46"
   },
+  "browser": {
+    "./lib/node.js": "./lib/browser.js"
+  },
   "author": "Veselin Todorov <hi@vesln.com>",
   "license": "MIT"
 }
