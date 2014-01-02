@@ -1,6 +1,6 @@
 {
   "name": "tryc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Async try-catch",
   "main": "./lib/node.js",
   "homepage": "https://github.com/vesln/tryc",
@@ -22,6 +22,7 @@
   "browser": {
     "main": "./lib/browser.js"
   },
+  "files": ["index.js", "lib"],
   "author": "Veselin Todorov <hi@vesln.com>",
   "license": "MIT"
 }
