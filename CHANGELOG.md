@@ -1,8 +1,13 @@
 
-0.0.4 / 2014-01-02 
+0.0.5 / 2014-01-19
 ==================
 
-  * Support browserify 
+  * Handle multiple uncaught exceptions
+
+0.0.4 / 2014-01-02
+==================
+
+  * Support browserify
 
 0.0.3 / 2013-12-23
 ==================
