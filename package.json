@@ -1,6 +1,6 @@
 {
   "name": "tryc",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Async try-catch",
   "main": "./lib/node.js",
   "browser": "./lib/browser.js",

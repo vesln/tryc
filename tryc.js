@@ -221,10 +221,11 @@ module.exports = function(fn, end) {
 
   window.onerror = function(msg, url, line) {
     handler(new Error(msg + ' at ' + url + ':' + line));
+    return true; // prevent default
   };
 
   try {
-    fn(handler)
+    fn(handler);
   } catch (err) {
     handler(err);
   }
